@@ -7,17 +7,15 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
-            AilurusFulgens redPanda = new AilurusFulgens("Steve");
+            AilurusFulgens redPanda = new AilurusFulgens("Steve", false, 18.5, 4);
             redPanda.Name = "Steve";
             string response = redPanda.Eat(5);
 
             Console.WriteLine(redPanda.Name + " says " + response);
 
-            AilurusFulgens Joe = new AilurusFulgens("Steve");
-            Console.WriteLine(Joe.Welcome("Joe"));
-            Console.WriteLine(Joe.Name.ToLower());
+            // AilurusFulgens Joe = new AilurusFulgens("Steve");
+            // Console.WriteLine(Joe.Welcome("Joe"));
+            // Console.WriteLine(Joe.Name.ToLower());
             
             Console.ReadLine();
         }

@@ -6,13 +6,12 @@ namespace Zoolandia.Species
     public class AilurusFulgens : Animal
     {
 
-        public AilurusFulgens(string name) : base(name) 
+        public AilurusFulgens(string name, bool smart, double weight, int limbs) : base(name, smart, weight, limbs) 
         {
-            //don't need to do anything 
         }
         public override string Eat(int numberOfFoodz)
         {
-            string animalEat = base.Eat(3);
+            string animalEat = base.Eat(3); 
             return animalEat + " Nom nom nom";
         }
 

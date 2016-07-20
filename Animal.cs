@@ -5,17 +5,25 @@ namespace Zoolandia
 {
     public class Animal
     {
-        public Animal (string name)
+        public Animal (string name, bool smart, double weight, int limbs)
         {
             this.Name = name;
+            this.Smart = smart;
+            this.Weight = weight;
+            this.Limbs = limbs;
         }
 
-        // private string _name; // this is a private variable. Conventional to put in underscore beforehand.
-        public string Name {get; set;} // Name is not a keyword. This is property of Animal
-
+        public string Name {get; set;}
+        public bool Smart {get; set;}
+        public double Weight {get; set;}
+        public int Limbs {get; set;}
         public virtual string Eat(int numberOfFoodz)
         {
             return "YUM!"; // make it virtual so that it can be overwritten
+        }
+        public void Profile()
+        {
+            Console.WriteLine(this.Name + this.Smart + this.Weight + this.Limbs);
         }
     }
 }
