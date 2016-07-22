@@ -7,6 +7,7 @@ namespace Zoolandia.Species
     {
         public OrnithorhynchusAnatinus(string name, bool smart, double weight, int limbs) : base(name, smart, weight, limbs) 
         {
+            
         }
     }
 }

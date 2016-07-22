@@ -17,6 +17,9 @@ namespace Zoolandia
             // Console.WriteLine(Joe.Welcome("Joe"));
             // Console.WriteLine(Joe.Name.ToLower());
             
+            PanPaniscus Bobby = new PanPaniscus("Bobby", true, 20.5, 4);
+            Bobby.Profile();
+
             Console.ReadLine();
         }
     }
