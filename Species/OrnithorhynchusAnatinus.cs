@@ -9,5 +9,9 @@ namespace Zoolandia.Species
         {
             
         }
+        public override string Movement()
+        {
+            return "Waddle!";
+        }
     }
 }

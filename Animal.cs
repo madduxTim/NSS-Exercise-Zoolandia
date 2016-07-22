@@ -21,6 +21,10 @@ namespace Zoolandia
         {
             return "YUM!"; // make it virtual so that it can be overwritten
         }
+        public virtual string Movement()
+        {
+            return "perambulate";
+        }
         public void Profile()
         {
             Console.WriteLine(this.Name + this.Smart + this.Weight + this.Limbs);

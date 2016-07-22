@@ -10,6 +10,10 @@ namespace Zoolandia.Species
         {
             
         }
+        public override string Movement()
+        {
+            return "Fly!";
+        }
  
     }
 }
