@@ -5,9 +5,9 @@ namespace Zoolandia.Species
     // Platypus
     public class OrnithorhynchusAnatinus : Animal
     {
-        public OrnithorhynchusAnatinus(string name, bool smart, double weight, int limbs) : base(name, smart, weight, limbs) 
+        public OrnithorhynchusAnatinus(string name) : base(name)
         {
-            
+            this.Name = name;
         }
         public override string Movement()
         {

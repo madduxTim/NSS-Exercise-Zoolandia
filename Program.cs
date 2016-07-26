@@ -15,16 +15,16 @@ namespace Zoolandia
             // Console.WriteLine(Joe.Welcome("Joe"));
             // Console.WriteLine(Joe.Name.ToLower());
             
-            PanPaniscus Bobby = new PanPaniscus("Bobby", true, 20.5, 4);
+            PanPaniscus Bobby = new PanPaniscus("Bobby");
             Console.WriteLine(Bobby.Name);
-            OrnithorhynchusAnatinus Billy = new OrnithorhynchusAnatinus("Billy", false, 5, 5);
+            OrnithorhynchusAnatinus Billy = new OrnithorhynchusAnatinus("Billy");
             Console.WriteLine(Billy.Name);
             Console.WriteLine(Billy.Movement());
-            PanPaniscus Bradley = new PanPaniscus("Bradley", true, 200, 4);
+            PanPaniscus Bradley = new PanPaniscus("Bradley");
             Console.WriteLine(Bradley.Name);
-            TursiopsTruncatus Brandy = new TursiopsTruncatus("Brandy", true, 4, 8);
+            TursiopsTruncatus Brandy = new TursiopsTruncatus("Brandy");
             Console.WriteLine(Brandy.Name);
-            PsittacusErithacus Parrot = new PsittacusErithacus("Benny", true, 4, 4);
+            PsittacusErithacus Parrot = new PsittacusErithacus("Benny");
             Console.WriteLine(Parrot.Name);
             Parrot.Who("Johnson");
             Console.WriteLine(Parrot.Movement()); 

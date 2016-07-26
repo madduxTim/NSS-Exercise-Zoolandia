@@ -6,9 +6,9 @@ namespace Zoolandia.Species
     public class PsittacusErithacus : Animal 
     {
 
-        public PsittacusErithacus(string name, bool smart, double weight, int limbs) : base(name, smart, weight, limbs) 
+        public PsittacusErithacus(string name) : base(name)
         {
-            
+            this.Name = name;
         }
         public override string Movement()
         {

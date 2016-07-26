@@ -6,9 +6,9 @@ namespace Zoolandia.Species
     public class PanPaniscus : Animal
     {
 
-        public PanPaniscus(string name, bool smart, double weight, int limbs) : base(name, smart, weight, limbs) 
+        public PanPaniscus(string name) : base(name)
         {
-            
+            this.Name = name;
         }
         public override string Movement()
         {

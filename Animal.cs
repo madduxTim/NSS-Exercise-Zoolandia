@@ -6,12 +6,9 @@ namespace Zoolandia
     public class Animal
     {
         
-        public Animal (string name, bool smart, double weight, int limbs)
+        public Animal (string name)
         {
             this.Name = name;
-            this.Smart = smart;
-            this.Weight = weight;
-            this.Limbs = limbs;
         }
         public string Name {get; set;}
         public bool Smart {get; set;}
