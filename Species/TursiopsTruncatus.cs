@@ -5,15 +5,14 @@ namespace Zoolandia.Species
     // Bottlenose Dolphin
     public class TursiopsTruncatus : Animal
     {
-
-        public TursiopsTruncatus(string name) : base(name)
-        {
-            this.Name = name;
-        }
+        public int Pod {get;set;}
         public override string Movement()
         {
-            return "Swim!";
+            return "Can't " + base.Movement() + ", but definitely swim.";
         }
-
+        public override float Speed()
+        {
+            return 12;
+        }
     }
 }

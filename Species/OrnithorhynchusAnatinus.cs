@@ -5,13 +5,16 @@ namespace Zoolandia.Species
     // Platypus
     public class OrnithorhynchusAnatinus : Animal
     {
-        public OrnithorhynchusAnatinus(string name) : base(name)
-        {
-            this.Name = name;
-        }
+        // this.CommonName = "Platypus"; WHY THIS NO WORKY? 
+        //
+        public int Paddle {get;set;}
         public override string Movement()
         {
-            return base.Movement() + " and waddle";
+            return "Can't really " + base.Movement() + ". More like a waddle...";
+        }
+        public override float Speed()
+        {
+            return 2.002f;
         }
     }
 }
