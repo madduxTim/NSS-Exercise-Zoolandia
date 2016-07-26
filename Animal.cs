@@ -5,17 +5,23 @@ namespace Zoolandia
 {
     public class Animal
     {
-        public Animal (string name)
+        // 1.1 - create some simple properties and methods on Animal. 
+        // 1.1 - simple properties
+        public string Name {get; set;} 
+        public bool Smart {get; set;}
+        public int Limbs {get; set;}
+        // 1.1 - simple methods
+        public virtual string Movement()
         {
-            this.Name = name;
+            return "perambulate";
         }
-
-        // private string _name; // this is a private variable. Conventional to put in underscore beforehand.
-        public string Name {get; set;} // Name is not a keyword. This is property of Animal
-
-        public virtual string Eat(int numberOfFoodz)
+        public virtual float Speed()
         {
-            return "YUM!"; // make it virtual so that it can be overwritten
+            return 0.0f; 
+        }
+        public void Profile()
+        {
+            Console.WriteLine(this.Name + this.Smart + this.Limbs);
         }
     }
 }
