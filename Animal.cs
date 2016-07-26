@@ -5,6 +5,7 @@ namespace Zoolandia
 {
     public class Animal
     {
+        
         public Animal (string name, bool smart, double weight, int limbs)
         {
             this.Name = name;
@@ -12,7 +13,6 @@ namespace Zoolandia
             this.Weight = weight;
             this.Limbs = limbs;
         }
-
         public string Name {get; set;}
         public bool Smart {get; set;}
         public double Weight {get; set;}
@@ -23,7 +23,16 @@ namespace Zoolandia
         }
         public virtual string Movement()
         {
-            return "perambulate";
+            return "Perambulate!";
+        }
+        // Profile constructor method returns both integer and string arguments (as well and boolean and double just for fun)
+        public void Who(string name)
+        {
+            this.Name = name;
+            // Console.WriteLine(name);
+            // return this.Name; //When I don't commented this out, it throws this error: 
+                // "returns void, a return keyword must not be followed by an object expression" 
+                // WHAT DO I CHANGE VOID TO? Virtual throws different error
         }
         public void Profile()
         {
