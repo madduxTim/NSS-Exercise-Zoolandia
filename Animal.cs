@@ -4,6 +4,11 @@ namespace Zoolandia
 {
     public class Animal
     {
+        public Animal (bool smart, int limbs)
+        {
+            this.Smart = smart;
+            this.Limbs = limbs;
+        }
         public string Name {get; set;} 
         public bool Smart {get; set;}
         public int Limbs {get; set;}
