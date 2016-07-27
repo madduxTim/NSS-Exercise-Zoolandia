@@ -1,10 +1,8 @@
-using System;
-
 namespace Zoolandia 
 {
     public class Animal
     {
-        public Animal (bool smart, int limbs)
+        public Animal(bool smart, int limbs)
         {
             this.Smart = smart;
             this.Limbs = limbs;
@@ -25,7 +23,7 @@ namespace Zoolandia
         }
         public void Profile()
         {
-            Console.WriteLine(this.Name + this.Smart + this.Limbs);
+            System.Console.WriteLine(this.Name + this.Smart + this.Limbs);
         }
     }
 }

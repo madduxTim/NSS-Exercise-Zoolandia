@@ -7,11 +7,8 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {            
-            PsittacusErithacus Tobey = new PsittacusErithacus(true, 2);
-            Console.WriteLine("Tobey's species = " + Tobey.ScienceName 
-            + ". Tobey's actually just a " + Tobey.CommonName 
-            + ". Tobey has " + Tobey.Limbs + " feet and as a " + Tobey.CommonName 
-            + ", it's " + Tobey.Smart + " that he is pretty smart");
+            TibetanSandFox Terry = new TibetanSandFox(true, 2);
+            Console.WriteLine(Terry.ScienceName + " moves like: " + Terry.Movement());
 
             Console.ReadLine();
         }

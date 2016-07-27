@@ -1,10 +1,10 @@
 namespace Zoolandia.Species 
 {
-    public class PanPaniscus : Animal
+    public class Bonobo : Animal
     {
         public string ScienceName {get;set;}
         public string CommonName {get;set;}
-        public PanPaniscus(bool smart, int limbs) : base(smart, limbs)
+        public Bonobo(bool smart, int limbs) : base(smart, limbs)
         {
             this.ScienceName = "Pan Paniscus";
             this.CommonName = "Bonobo"; 

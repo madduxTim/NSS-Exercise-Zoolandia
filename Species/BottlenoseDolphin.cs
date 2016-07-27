@@ -1,10 +1,10 @@
 namespace Zoolandia.Species 
 {
-    public class TursiopsTruncatus : Animal
+    public class BottlenoseDolphin : Animal
     {
         public string ScienceName {get;set;}
         public string CommonName {get;set;}
-        public TursiopsTruncatus(bool smart, int limbs) : base(smart, limbs)
+        public BottlenoseDolphin(bool smart, int limbs) : base(smart, limbs)
         {
             this.ScienceName = "Tursiops Truncatus";
             this.CommonName = "Bottlenose Dolphin"; 

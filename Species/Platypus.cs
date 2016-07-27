@@ -1,12 +1,12 @@
 namespace Zoolandia.Species 
 {
-    public class OrnithorhynchusAnatinus : Animal
+    public class Platypus : Animal
     {
         public string ScienceName {get;set;}
         public string CommonName {get;set;}
-        public OrnithorhynchusAnatinus(bool smart, int limbs) : base(smart, limbs)
+        public Platypus(bool smart, int limbs) : base(smart, limbs)
         {
-            this.ScienceName = "Ornithorhynchus Anatinus";
+            this.ScienceName = "Ornithorhynchus anatinus";
             this.CommonName = "Platypus"; 
         }
         public int Paddle {get;set;}
