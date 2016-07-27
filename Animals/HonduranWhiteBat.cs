@@ -1,18 +1,18 @@
-namespace Zoolandia.Species 
+namespace Zoolandia.Animals 
 {
-    public class PandaAnt : Animal 
+    public class HonduranWhiteBat : Animal 
     {
         public string ScienceName {get;set;}
         public string CommonName {get;set;}
-        public PandaAnt(bool smart, int limbs) : base(smart, limbs)
+        public HonduranWhiteBat(bool smart, int limbs) : base(smart, limbs)
         {
-            this.ScienceName = "Mutillidae";
-            this.CommonName = "Panda Ant"; 
+            this.ScienceName = "Ectophylla alba";
+            this.CommonName = "Honduran White Bat"; 
         }
         public int Company {get;set;}
         public override string Movement()
         {
-            return "Crawls." ;
+            return "Flys." ;
         }
         public override float Speed()
         {

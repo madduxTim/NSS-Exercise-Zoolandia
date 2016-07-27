@@ -1,18 +1,18 @@
-namespace Zoolandia.Species 
+namespace Zoolandia.Animals 
 {
-    public class LeafTailedGecko : Animal 
+    public class PandaAnt : Animal 
     {
         public string ScienceName {get;set;}
         public string CommonName {get;set;}
-        public LeafTailedGecko(bool smart, int limbs) : base(smart, limbs)
+        public PandaAnt(bool smart, int limbs) : base(smart, limbs)
         {
-            this.ScienceName = "Uroplatus henkeli";
-            this.CommonName = "Leaf-tailed Gecko"; 
+            this.ScienceName = "Mutillidae";
+            this.CommonName = "Panda Ant"; 
         }
         public int Company {get;set;}
         public override string Movement()
         {
-            return "Shimmies." ;
+            return "Crawls." ;
         }
         public override float Speed()
         {

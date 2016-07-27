@@ -1,18 +1,18 @@
-namespace Zoolandia.Species 
+namespace Zoolandia.Animals 
 {
-    public class Shoebill : Animal 
+    public class BlueDragon : Animal 
     {
         public string ScienceName {get;set;}
         public string CommonName {get;set;}
-        public Shoebill(bool smart, int limbs) : base(smart, limbs)
+        public BlueDragon(bool smart, int limbs) : base(smart, limbs)
         {
-            this.ScienceName = "Balaeniceps rex";
-            this.CommonName = "Shoebill"; 
+            this.ScienceName = "Glaucus atlanticus";
+            this.CommonName = "Blue Dragon"; 
         }
         public int Company {get;set;}
         public override string Movement()
         {
-            return "Lumbers." ;
+            return "Swims." ;
         }
         public override float Speed()
         {

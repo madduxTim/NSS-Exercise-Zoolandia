@@ -1,18 +1,18 @@
-namespace Zoolandia.Species 
+namespace Zoolandia.Animals 
 {
-    public class HonduranWhiteBat : Animal 
+    public class LongEaredJerboa : Animal 
     {
         public string ScienceName {get;set;}
         public string CommonName {get;set;}
-        public HonduranWhiteBat(bool smart, int limbs) : base(smart, limbs)
+        public LongEaredJerboa(bool smart, int limbs) : base(smart, limbs)
         {
-            this.ScienceName = "Ectophylla alba";
-            this.CommonName = "Honduran White Bat"; 
+            this.ScienceName = "Euchoreutes naso";
+            this.CommonName = "Long-eared Jerboa"; 
         }
         public int Company {get;set;}
         public override string Movement()
         {
-            return "Flys." ;
+            return "Hops and scoots I imagine." ;
         }
         public override float Speed()
         {

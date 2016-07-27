@@ -1,4 +1,4 @@
-namespace Zoolandia.Species 
+namespace Zoolandia.Animals 
 {
     public class TibetanSandFox : Animal 
     {

@@ -1,5 +1,5 @@
 ﻿using System;
-using Zoolandia.Species;
+using Zoolandia.Animals;
 
 namespace Zoolandia
 {

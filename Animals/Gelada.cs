@@ -1,18 +1,18 @@
-namespace Zoolandia.Species 
+namespace Zoolandia.Animals 
 {
-    public class GlassFrog : Animal 
+    public class Gelada : Animal 
     {
         public string ScienceName {get;set;}
         public string CommonName {get;set;}
-        public GlassFrog(bool smart, int limbs) : base(smart, limbs)
+        public Gelada(bool smart, int limbs) : base(smart, limbs)
         {
-            this.ScienceName = "Centrolene geckoideum";
-            this.CommonName = "Glass Frog"; 
+            this.ScienceName = "Theropithecus gelada";
+            this.CommonName = "Gelada"; 
         }
         public int Company {get;set;}
         public override string Movement()
         {
-            return "Hops." ;
+            return "Can definitely " + base.Movement();
         }
         public override float Speed()
         {

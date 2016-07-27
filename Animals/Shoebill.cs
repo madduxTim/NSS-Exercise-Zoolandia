@@ -1,18 +1,18 @@
-namespace Zoolandia.Species 
+namespace Zoolandia.Animals 
 {
-    public class Agouta : Animal 
+    public class Shoebill : Animal 
     {
         public string ScienceName {get;set;}
         public string CommonName {get;set;}
-        public Agouta(bool smart, int limbs) : base(smart, limbs)
+        public Shoebill(bool smart, int limbs) : base(smart, limbs)
         {
-            this.ScienceName = "Solenodon Paradoxus";
-            this.CommonName = "Agouta"; 
+            this.ScienceName = "Balaeniceps rex";
+            this.CommonName = "Shoebill"; 
         }
         public int Company {get;set;}
         public override string Movement()
         {
-            return "Ambles and meanders." ;
+            return "Lumbers." ;
         }
         public override float Speed()
         {

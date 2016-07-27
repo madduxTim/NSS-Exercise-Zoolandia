@@ -1,18 +1,18 @@
-namespace Zoolandia.Species 
+namespace Zoolandia.Animals 
 {
-    public class LongEaredJerboa : Animal 
+    public class Chevrotain : Animal 
     {
         public string ScienceName {get;set;}
         public string CommonName {get;set;}
-        public LongEaredJerboa(bool smart, int limbs) : base(smart, limbs)
+        public Chevrotain(bool smart, int limbs) : base(smart, limbs)
         {
-            this.ScienceName = "Euchoreutes naso";
-            this.CommonName = "Long-eared Jerboa"; 
+            this.ScienceName = "Hyemoschus aquaticus";
+            this.CommonName = "Chevrotain"; 
         }
         public int Company {get;set;}
         public override string Movement()
         {
-            return "Hops and scoots I imagine." ;
+            return "Ambles." ;
         }
         public override float Speed()
         {

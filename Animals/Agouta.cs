@@ -1,18 +1,18 @@
-namespace Zoolandia.Species 
+namespace Zoolandia.Animals 
 {
-    public class Gelada : Animal 
+    public class Agouta : Animal 
     {
         public string ScienceName {get;set;}
         public string CommonName {get;set;}
-        public Gelada(bool smart, int limbs) : base(smart, limbs)
+        public Agouta(bool smart, int limbs) : base(smart, limbs)
         {
-            this.ScienceName = "Theropithecus gelada";
-            this.CommonName = "Gelada"; 
+            this.ScienceName = "Solenodon Paradoxus";
+            this.CommonName = "Agouta"; 
         }
         public int Company {get;set;}
         public override string Movement()
         {
-            return "Can definitely " + base.Movement();
+            return "Ambles and meanders." ;
         }
         public override float Speed()
         {
