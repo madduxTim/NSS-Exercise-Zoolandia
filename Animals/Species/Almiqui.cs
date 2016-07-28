@@ -1,18 +1,18 @@
 namespace Zoolandia.Animals 
 {
-    public class PandaAnt : Animal 
+    public class Almiqui : Animal 
     {
         public string ScienceName {get;set;}
         public string CommonName {get;set;}
-        public PandaAnt(bool smart, int limbs) : base(smart, limbs)
+        public Almiqui(bool smart, int limbs) : base(smart, limbs)
         {
-            this.ScienceName = "Mutillidae";
-            this.CommonName = "Panda Ant"; 
+            this.ScienceName = "Solenodon Cubanus";
+            this.CommonName = "Almiqui"; 
         }
         public int Company {get;set;}
         public override string Movement()
         {
-            return "Crawls." ;
+            return "Ambladura y escabullen." ;
         }
         public override float Speed()
         {
