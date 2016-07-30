@@ -1,13 +1,11 @@
 namespace Zoolandia.Animals 
 {
-    public class Agouta : Animal 
+    public class Agouta : Solenodon 
     {
-        public string ScienceName {get;set;}
-        public string CommonName {get;set;}
-        public Agouta(bool smart, int limbs) : base(smart, limbs)
+        public Agouta(string name) : base(name)
         {
             this.ScienceName = "Solenodon Paradoxus";
-            this.CommonName = "Agouta"; 
+            this.CommonName = "Agouta";
         }
         public int Company {get;set;}
         public override string Movement()

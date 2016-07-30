@@ -1,10 +1,8 @@
 namespace Zoolandia.Animals 
 {
-    public class TibetanSandFox : Animal 
+    public class TibetanSandFox : Vulpes 
     {
-        public string ScienceName {get;set;}
-        public string CommonName {get;set;}
-        public TibetanSandFox(bool smart, int limbs) : base(smart, limbs)
+        public TibetanSandFox(string name) : base(name)
         {
             this.ScienceName = "Vulpes ferrilata";
             this.CommonName = "Tibetan Sand Fox"; 

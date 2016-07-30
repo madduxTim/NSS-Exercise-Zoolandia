@@ -1,10 +1,8 @@
 namespace Zoolandia.Animals 
 {
-    public class Platypus : Animal
+    public class Platypus : Ornithorhynchus
     {
-        public string ScienceName {get;set;}
-        public string CommonName {get;set;}
-        public Platypus(bool smart, int limbs) : base(smart, limbs)
+        public Platypus(string name) : base(name)
         {
             this.ScienceName = "Ornithorhynchus anatinus";
             this.CommonName = "Platypus"; 

@@ -1,10 +1,8 @@
 namespace Zoolandia.Animals 
 {
-    public class GlassFrog : Animal 
+    public class GlassFrog : Centrolene 
     {
-        public string ScienceName {get;set;}
-        public string CommonName {get;set;}
-        public GlassFrog(bool smart, int limbs) : base(smart, limbs)
+        public GlassFrog(string name) : base(name)
         {
             this.ScienceName = "Centrolene geckoideum";
             this.CommonName = "Glass Frog"; 

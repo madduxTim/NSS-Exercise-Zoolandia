@@ -1,10 +1,8 @@
 namespace Zoolandia.Animals 
 {
-    public class AfricanGrey : Animal 
+    public class AfricanGrey : Psittacus 
     {
-        public string ScienceName {get;set;}
-        public string CommonName {get;set;}
-        public AfricanGrey(bool smart, int limbs) : base(smart, limbs)
+        public AfricanGrey(string name) : base(name)
         {
             this.ScienceName = "Psittacus Erithacus";
             this.CommonName = "African Grey"; 

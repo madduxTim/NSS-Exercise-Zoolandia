@@ -1,10 +1,8 @@
 namespace Zoolandia.Animals 
 {
-    public class Almiqui : Animal 
+    public class Almiqui : Solenodon 
     {
-        public string ScienceName {get;set;}
-        public string CommonName {get;set;}
-        public Almiqui(bool smart, int limbs) : base(smart, limbs)
+        public Almiqui(string name) : base(name)
         {
             this.ScienceName = "Solenodon Cubanus";
             this.CommonName = "Almiqui"; 

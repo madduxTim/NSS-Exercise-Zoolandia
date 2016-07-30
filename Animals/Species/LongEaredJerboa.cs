@@ -1,10 +1,8 @@
 namespace Zoolandia.Animals 
 {
-    public class LongEaredJerboa : Animal 
+    public class LongEaredJerboa : Euchoreutes 
     {
-        public string ScienceName {get;set;}
-        public string CommonName {get;set;}
-        public LongEaredJerboa(bool smart, int limbs) : base(smart, limbs)
+        public LongEaredJerboa(string name) : base(name)
         {
             this.ScienceName = "Euchoreutes naso";
             this.CommonName = "Long-eared Jerboa"; 

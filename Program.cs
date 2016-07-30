@@ -7,8 +7,9 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {            
-            TibetanSandFox Terry = new TibetanSandFox(true, 2);
-            Console.WriteLine(Terry.ScienceName + " moves like: " + Terry.Movement());
+            Almiqui Terry = new Almiqui("Terry");
+            Console.WriteLine(Terry.Name + " the " + Terry.CommonName + " moves like: " + Terry.Movement());
+            Terry.Profile();
 
             Console.ReadLine();
         }

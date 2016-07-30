@@ -1,10 +1,8 @@
 namespace Zoolandia.Animals 
 {
-    public class Gelada : Animal 
+    public class Gelada : Theropithecus 
     {
-        public string ScienceName {get;set;}
-        public string CommonName {get;set;}
-        public Gelada(bool smart, int limbs) : base(smart, limbs)
+        public Gelada(string name) : base(name)
         {
             this.ScienceName = "Theropithecus gelada";
             this.CommonName = "Gelada"; 

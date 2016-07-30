@@ -1,10 +1,8 @@
 namespace Zoolandia.Animals 
 {
-    public class LeafTailedGecko : Animal 
+    public class LeafTailedGecko : Uroplatus 
     {
-        public string ScienceName {get;set;}
-        public string CommonName {get;set;}
-        public LeafTailedGecko(bool smart, int limbs) : base(smart, limbs)
+        public LeafTailedGecko(string name) : base(name)
         {
             this.ScienceName = "Uroplatus henkeli";
             this.CommonName = "Leaf-tailed Gecko"; 

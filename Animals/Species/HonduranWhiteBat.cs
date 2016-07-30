@@ -1,10 +1,8 @@
 namespace Zoolandia.Animals 
 {
-    public class HonduranWhiteBat : Animal 
+    public class HonduranWhiteBat : Ectophylla 
     {
-        public string ScienceName {get;set;}
-        public string CommonName {get;set;}
-        public HonduranWhiteBat(bool smart, int limbs) : base(smart, limbs)
+        public HonduranWhiteBat(string name) : base(name)
         {
             this.ScienceName = "Ectophylla alba";
             this.CommonName = "Honduran White Bat"; 

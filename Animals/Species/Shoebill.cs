@@ -1,10 +1,8 @@
 namespace Zoolandia.Animals 
 {
-    public class Shoebill : Animal 
+    public class Shoebill : Balaeniceps 
     {
-        public string ScienceName {get;set;}
-        public string CommonName {get;set;}
-        public Shoebill(bool smart, int limbs) : base(smart, limbs)
+        public Shoebill(string name) : base(name)
         {
             this.ScienceName = "Balaeniceps rex";
             this.CommonName = "Shoebill"; 

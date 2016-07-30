@@ -1,10 +1,8 @@
 namespace Zoolandia.Animals 
 {
-    public class Chevrotain : Animal 
+    public class Chevrotain : Hyemoschus 
     {
-        public string ScienceName {get;set;}
-        public string CommonName {get;set;}
-        public Chevrotain(bool smart, int limbs) : base(smart, limbs)
+        public Chevrotain(string name) : base(name)
         {
             this.ScienceName = "Hyemoschus aquaticus";
             this.CommonName = "Chevrotain"; 
