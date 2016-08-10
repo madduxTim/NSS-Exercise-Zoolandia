@@ -1,10 +1,12 @@
-using System;
-
-namespace Zoolandia.Species 
+namespace Zoolandia.Animals 
 {
-    // Bonobo
-    public class PanPaniscus : Animal
+    public class Bonobo : Pan
     {
+        public Bonobo(string name) : base(name)
+        {
+            this.ScienceName = "Pan Paniscus";
+            this.CommonName = "Bonobo"; 
+        }
         public int Troop {get;set;}
 
         public override string Movement()

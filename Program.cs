@@ -1,5 +1,7 @@
 ﻿using System;
-using Zoolandia.Species;
+using System.Collections.Generic;
+using Zoolandia.Animals;
+using Zoolandia.Habitats;
 
 namespace Zoolandia
 {
@@ -7,20 +9,65 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {            
-            PanPaniscus Bobby = new PanPaniscus();
-            OrnithorhynchusAnatinus Billy = new OrnithorhynchusAnatinus();
-            Billy.Smart = true;
-            Billy.Name = "Billybob";
-            Billy.Paddle = 5;
-            Console.WriteLine(Billy.Movement(), Billy.Paddle);
-            Console.WriteLine("A group of platypi is called a 'Paddle'. " + Billy.Name + " lives in a paddle of " + Billy.Paddle + ".");
-            Console.WriteLine("It's " + Billy.Smart + ", " + Billy.Name + " is cool, but not very smart.");
-            Console.WriteLine("It's {1}, {0} is cool, but not very smart.", Billy.Name, Billy.Smart);
-            Console.WriteLine(Billy.Speed());
-            PsittacusErithacus Parrot = new PsittacusErithacus();
-            Console.WriteLine(Parrot.Movement()); 
+            AfricanGrey PeteParrot = new AfricanGrey("Pete the Parrot"); 
+            Agouta AndyAgouta = new Agouta("Andy the Agouta");
+            Almiqui AugustoAlmiqui = new Almiqui("Augusto el Almiqui");
+            BlueDragon BobBlueDragon = new BlueDragon("Bob the Blue Dragon");
+            Bonobo BennyBonobo = new Bonobo("Benny the Bonobo");
+            BottlenoseDolphin DennyDolphin = new BottlenoseDolphin("Denny the Dolphin");
+            Chevrotain ChevyChevrotain = new Chevrotain("Chevy the Chevrotain");
+            Gelada GerryGelada = new Gelada("Gerry the Gelada");
+            GlassFrog FrankFrog = new GlassFrog("Frank the Frog");
+            HonduranWhiteBat BrandyBat = new HonduranWhiteBat("Brandy the Bat");
+            LeafTailedGecko GordonGecko = new LeafTailedGecko("Gordon the Gecko");
+            LongEaredJerboa JeremyJerboa = new LongEaredJerboa("Jeremy the Jerboa");
+            Platypus PollyPlatypus = new Platypus("Polly the Platypus");
+            Shoebill SharonShoebill = new Shoebill("Sharon the Shoebill");
+            TibetanSandFox PhilFox = new TibetanSandFox("Phil the Fox");
+            
+            Console.WriteLine(SharonShoebill.Name); // Testing 
 
-            Console.ReadLine();
+            Ocean ocean = new Ocean("The Ocean");
+            ocean.inhabitants.Add(BobBlueDragon);
+            ocean.inhabitants.Add(DennyDolphin);
+
+            Plains plains = new Plains("The Plains");
+            plains.inhabitants.Add(GerryGelada);
+            plains.inhabitants.Add(ChevyChevrotain);
+            plains.inhabitants.Add(JeremyJerboa);
+            plains.inhabitants.Add(PollyPlatypus);
+            plains.inhabitants.Add(SharonShoebill);
+            plains.inhabitants.Add(BennyBonobo);
+
+            RainForest rainforest = new RainForest("Rain Forest");
+            rainforest.inhabitants.Add(PeteParrot);
+            rainforest.inhabitants.Add(AndyAgouta);
+            rainforest.inhabitants.Add(AugustoAlmiqui);
+            rainforest.inhabitants.Add(BrandyBat);
+            rainforest.inhabitants.Add(FrankFrog);
+            rainforest.inhabitants.Add(GordonGecko);
+
+            Steppe steppe = new Steppe("The Steppe");
+            steppe.inhabitants.Add(PhilFox);
+
+            List<Habitat> places = new List<Habitat>();
+            places.Add(ocean);
+            places.Add(plains);
+            places.Add(rainforest);
+            places.Add(steppe);
+
+            foreach (Habitat place in places)
+            {
+                Console.WriteLine("Habitat : {0}", place.Name);
+                foreach(Animal inhabitant in place.inhabitants)
+                {
+                    Console.WriteLine(inhabitant.CommonName + " moves like: " + inhabitant.Movement());
+                }
+            }
         }
     }
 }
+
+            //Almiqui Terry = new Almiqui("Terry");
+            //Console.WriteLine(Terry.Name + " the " + Terry.CommonName + " moves like: " + Terry.Movement());
+            //Terry.Profile();

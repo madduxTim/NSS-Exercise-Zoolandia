@@ -1,10 +1,12 @@
-using System;
-
-namespace Zoolandia.Species 
+namespace Zoolandia.Animals 
 {
-    // African Grey 
-    public class PsittacusErithacus : Animal 
+    public class AfricanGrey : Psittacus 
     {
+        public AfricanGrey(string name) : base(name)
+        {
+            this.ScienceName = "Psittacus Erithacus";
+            this.CommonName = "African Grey"; 
+        }
         public int Company {get;set;}
         public override string Movement()
         {

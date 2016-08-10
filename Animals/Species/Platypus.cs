@@ -1,13 +1,14 @@
-using System;
-
-namespace Zoolandia.Species 
+namespace Zoolandia.Animals 
 {
-    // Platypus
-    public class OrnithorhynchusAnatinus : Animal
+    public class Platypus : Ornithorhynchus
     {
-        // this.CommonName = "Platypus"; WHY THIS NO WORKY? 
-        //
+        public Platypus(string name) : base(name)
+        {
+            this.ScienceName = "Ornithorhynchus anatinus";
+            this.CommonName = "Platypus"; 
+        }
         public int Paddle {get;set;}
+        
         public override string Movement()
         {
             return "Can't really " + base.Movement() + ". More like a waddle...";
