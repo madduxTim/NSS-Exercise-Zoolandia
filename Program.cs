@@ -24,6 +24,8 @@ namespace Zoolandia
             Platypus PollyPlatypus = new Platypus("Polly the Platypus");
             Shoebill SharonShoebill = new Shoebill("Sharon the Shoebill");
             TibetanSandFox PhilFox = new TibetanSandFox("Phil the Fox");
+            
+            Console.WriteLine(SharonShoebill.Name); // Testing 
 
             Ocean ocean = new Ocean("The Ocean");
             ocean.inhabitants.Add(BobBlueDragon);

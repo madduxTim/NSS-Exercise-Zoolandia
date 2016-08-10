@@ -7,6 +7,7 @@ namespace Zoolandia
             this.Genus = "Balaeniceps";
             this.Limbs = 4;
             this.Smart = false;
+            //this.Name = "Bobby";
         }
     }
 }
